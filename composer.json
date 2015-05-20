@@ -17,5 +17,13 @@
     "require-dev": {
         "composer/composer": "dev-master",
         "phpunit/phpunit": "3.7.*"
+    },
+    "extra": {
+        "class": "Zend_Composer_Plugin"
+    },
+    "autoload": {
+        "psr-0": {
+            "Zend_Composer_": "library/"
+        }
     }
 }
