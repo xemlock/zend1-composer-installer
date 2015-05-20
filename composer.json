@@ -1,0 +1,21 @@
+{
+    "name": "xemlock/zend1-composer-installer",
+    "type": "composer-plugin",
+    "description": "Composer installer for Zend Framework 1 modules",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "xemlock",
+            "email": "xemlock@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0",
+        "composer-plugin-api": "1.0.0"
+    },
+    "require-dev": {
+        "composer/composer": "dev-master",
+        "phpunit/phpunit": "3.7.*"
+    }
+}
