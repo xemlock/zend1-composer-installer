@@ -22,9 +22,19 @@ class Zend_Composer_PluginTest extends PHPUnit_Framework_TestCase
     {
         $this->_composer = new Composer();
         $this->_composer->setConfig(new Config());
-        $this->_composer->setInstallationManager(new InstallationManager());
 
         $this->_io = new NullIO();
+
+        if (method_exists('Composer\Installer\InstallationManager', '__construct')) {
+            $loop = $this->getMockBuilder('Composer\Util\Loop')
+                ->disableOriginalConstructor()
+                ->getMock();
+            $installationManager = new InstallationManager($loop, $this->_io);
+        } else {
+            $installationManager = new InstallationManager();
+        }
+
+        $this->_composer->setInstallationManager($installationManager);
     }
 
     public function testPluginActivate()
