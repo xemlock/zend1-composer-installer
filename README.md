@@ -1,7 +1,6 @@
 # Composer installer for Zend Framework 1 modules
 
 [![Build Status](https://github.com/xemlock/zend1-composer-installer/workflows/build/badge.svg)](https://github.com/xemlock/zend1-composer-installer/actions?query=workflow/build)
-[![Build Status](https://travis-ci.org/xemlock/zend1-composer-installer.svg?branch=master)](https://travis-ci.org/xemlock/zend1-composer-installer)
 
 This is an installer plugin for Zend Framework 1 modules.
 
